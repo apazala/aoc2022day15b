@@ -93,6 +93,7 @@ int main()
         {
             prevcount = count;            
             (it->second)? count-- : count++;
+            //Discontinuity in the interval!! Here is the answer
             if(prevcount == 0 && count == 1 && it->first != (it-1)->first){
                 xans = (it-1)->first;
                 yans = y;
